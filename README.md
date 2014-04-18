@@ -10,8 +10,8 @@ Installation
 
 Copy the “Arduino\hardware" folder to your sketchbook folder.
 
-For example in Mac OSX:
+For example in Mac OSX:<br/>
 Documents/Arduino
 
-For example in Windows:
+For example in Windows:<br/>
 C:\Users\YourName\Documents\Arduino
