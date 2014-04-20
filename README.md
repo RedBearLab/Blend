@@ -33,6 +33,7 @@ Arduino IDE > hardware > arduino > cores > arduino > main.cpp
 
 Or modify it yourself with the following code before setup():
 
+```
 #if defined(BLEND_MICRO_8MHZ)
 	// As the F_CPU = 8000000UL, the USB core make the PLLCSR = 0x02
 	// But the external xtal is 16000000Hz, so correct it here.
@@ -43,6 +44,7 @@ Or modify it yourself with the following code before setup():
 	CLKPR = 0x80;
 	CLKPR = 0;
 #endif
+```
 
 This code is to set the USB and CPU clock as it is running at 8 MHz with 3.3v but the external crystal is 16 MHz, so need to adjust the USB to run correctly.
 
