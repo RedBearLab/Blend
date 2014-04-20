@@ -49,17 +49,16 @@ Or modify it yourself with the following code before setup():
 This code is to set the USB and CPU clock as it is running at 8 MHz with 3.3v but the external crystal is 16 MHz, so need to adjust the USB to run correctly.
 
 
-How to Use
-==========
+Step 3:
 
 The Blend Micro board can be used as a standalone Arduino board without BLE. If you use BLE function, you need to use two libraries.
 
-1. Nordic nRF8001 SDK for Arduino
+1: Get Nordic nRF8001 SDK for Arduino<br/>
 https://github.com/NordicSemiconductor/ble-sdk-arduino
 
 It provides a lot of BLE examples/tutorials includes how to create your own services and characteristics.
 
-2. RBL nRF8001 Library (added some simple APIs)
+2: Get RBL nRF8001 Library (added some simple APIs)<br/>
 https://github.com/RedBearLab/nRF8001
 
 It requires Nordic’s to work and provides a simple service and some APIs for easy to use with RBL examples and App. It is easy to use if you just want to exchange data between the board and iPhone or other BLE Central devices.
