@@ -10,9 +10,7 @@ Installation
 
 Step 1:
 
-Copy the “Arduino\hardware" folder to your sketchbook folder.
-
-The sketchbook folder is your "Documents\Arduino” folder.
+Copy the “Arduino\hardware" folder to your sketchbook folder. The sketchbook folder is your "Documents\Arduino” folder.
 
 Mac OSX:<br/>
 Documents > Arduino
@@ -69,7 +67,7 @@ Driver
 
 The board contains an USB port, which allows you to load compiled sketches on to the board, the USB will act as a USB CDC (virtual COM) port and it requires driver to work.
 
-Download the signed driver here for Windows (includes up to Windows 8 PC):
+Download the signed driver here for Windows (includes up to Windows 8 PC):<br/>
 http://support.atmel.com/bin/customer.exe?=&action=viewKbEntry&id=1624
 
 Installation
