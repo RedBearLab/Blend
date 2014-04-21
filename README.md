@@ -64,6 +64,21 @@ https://github.com/RedBearLab/nRF8001
 It requires Nordic’s to work and provides a simple service and some APIs for easy to use with RBL examples and App. It is easy to use if you just want to exchange data between the board and iPhone or other BLE Central devices.
 
 
+Driver
+======
+
+The board contains an USB port, which allows you to load compiled sketches on to the board, the USB will act as a USB CDC (virtual COM) port and it requires driver to work.
+
+Download the signed driver here for Windows (includes up to Windows 8 PC):
+http://support.atmel.com/bin/customer.exe?=&action=viewKbEntry&id=1624
+
+Installation
+
+Do not connect Blend Micro to any USB port before the device driver is installed. To install, right click the .inf file and select install, after that, connect your Blend Micro to one of USB ports.
+
+For Mac OSX and Linux, no driver is required.
+
+
 License
 =======
 
