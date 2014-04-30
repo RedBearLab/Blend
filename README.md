@@ -46,6 +46,26 @@ Or modify it yourself with the following code before setup():
 
 This code is to set the USB and CPU clock as it is running at 8 MHz with 3.3v but the external crystal is 16 MHz, so need to adjust the USB to run correctly.
 
+An option to play without using the add-on:
+
+Use it as Arduino Micro at 16 MHz (it is so called "overclock", since it is running at 3.3V), the bootloader still requires our driver to work, see point 7.
+
+Modify your sketch with the following code in setup():
+
+```
+void setup()
+{
+    // Set to 16 MHz as external crystal.
+    CLKPR = 0x80;
+    CLKPR = 0;
+
+    // Since default pins set to 9 and 8 for REQN and RDYN to nRF8001 for Arduino Micro
+    // But the Blend Micro is using 6 and 7, so change the pins here. 
+    ble_set_pins(6, 7);
+
+    // other setup code here.
+}
+```
 
 Step 3:
 
