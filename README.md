@@ -48,7 +48,7 @@ This code is to set the USB and CPU clock as it is running at 8 MHz with 3.3v bu
 
 An option to play without using the add-on:
 
-Use it as Arduino Micro at 16 MHz (it is so called "overclock", since it is running at 3.3V), the bootloader still requires our driver to work, see point 7 (Windows platform only).
+Use it as Arduino Micro at 16 MHz (it is so called "overclock", since it is running at 3.3V), the bootloader still requires our driver to work, see Driver session (Windows platform only).
 
 Modify your sketch with the following code in setup():
 
