@@ -102,13 +102,15 @@ Resources
 
 1. [Blend Micro Forum](https://redbearlab.zendesk.com/forums/23046987-Blend-Micro)
 
-2. [Nordic nRF8001 SDK for Arduino](https://redbearlab.zendesk.com/forums/21921933-Nordic-nRF8001-SDK-for-Arduino)
+2. [Nordic nRF8001 SDK for Arduino - Library](https://github.com/NordicSemiconductor/ble-sdk-arduino)
 
-3. [RBL nRF8001 Library](https://github.com/RedBearLab/nRF8001)
+3. [Nordic nRF8001 SDK for Arduino - Forum](https://redbearlab.zendesk.com/forums/21921933-Nordic-nRF8001-SDK-for-Arduino)
 
-3. [Nordic Developer Zone](https://devzone.nordicsemi.com/)
+4. [RBL nRF8001 Library](https://github.com/RedBearLab/nRF8001)
 
-4. [Bluetooth SIG](https://www.bluetooth.org/en-us)
+5. [Nordic Developer Zone](https://devzone.nordicsemi.com/)
+
+6. [Bluetooth SIG](https://www.bluetooth.org/en-us)
 
 
 License
