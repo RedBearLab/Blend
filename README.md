@@ -97,6 +97,20 @@ Do not connect Blend Micro to any USB port before the device driver is installed
 For Mac OSX and Linux, no driver is required.
 
 
+Resources
+=========
+
+1. [Blend Micro Forum](https://redbearlab.zendesk.com/forums/23046987-Blend-Micro)
+
+2. [Nordic nRF8001 SDK for Arduino](https://redbearlab.zendesk.com/forums/21921933-Nordic-nRF8001-SDK-for-Arduino)
+
+3. [RBL nRF8001 Library](https://github.com/RedBearLab/nRF8001)
+
+3. [Nordic Developer Zone](https://devzone.nordicsemi.com/)
+
+4. [Bluetooth SIG](https://www.bluetooth.org/en-us)
+
+
 License
 =======
 
