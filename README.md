@@ -82,6 +82,12 @@ https://github.com/RedBearLab/nRF8001
 It requires Nordic’s to work and provides a simple service and some APIs for easy to use with RBL examples and App. It is easy to use if you just want to exchange data between the board and iPhone or other BLE Central devices.
 
 
+*** It is similar to install on Linux.
+*** For Linux (e.g. Ubuntu 14.04) users: if you found you cannot upload sketches, you have to remove ModemManager
+
+sudo apt-get remove ModemManager
+
+
 Driver
 ======
 
