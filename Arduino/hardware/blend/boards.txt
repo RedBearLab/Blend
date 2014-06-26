@@ -1,3 +1,10 @@
+
+##############################################################
+
+blend.name=Blendblend.upload.protocol=avr109blend.upload.maximum_size=28672
+blend.upload.speed=57600blend.upload.disable_flushing=trueblend.bootloader.low_fuses=0xffblend.bootloader.high_fuses=0xd8blend.bootloader.extended_fuses=0xcbblend.bootloader.path=caterinablend.bootloader.file=Caterina-Blend.hexblend.bootloader.unlock_bits=0x3Fblend.bootloader.lock_bits=0x2Fblend.build.mcu=atmega32u4
+blend.build.f_cpu=16000000Lblend.build.vid=0x2341blend.build.pid=0x8036blend.build.core=arduino:arduinoblend.build.variant=Blend
+
 ##############################################################
 
 blendmicro8.name=Blend Micro 3.3V/8MHz
@@ -22,7 +29,9 @@ blendmicro8.build.vid=0x03EB
 blendmicro8.build.pid=0x2404
 blendmicro8.build.core=arduino:arduino
 blendmicro8.build.variant=BlendMicro-8MHz
+
 ##############################################################
+
 blendmicro16.name=Blend Micro 3.3V/16MHz (overclock)
 blendmicro16.upload.protocol=avr109
 blendmicro16.upload.maximum_size=28672
@@ -45,7 +54,5 @@ blendmicro16.build.vid=0x03EB
 blendmicro16.build.pid=0x2404
 blendmicro16.build.core=arduino:arduino
 blendmicro16.build.variant=BlendMicro-16MHz
+
 ##############################################################
-
-
-
