@@ -1,12 +1,15 @@
-Blend
-=====
+#Blend
+---
+
 
 An Arduino compatible development board with BLE support (Atmega32u4 + nRF8001).
 
 This add-on package is to add support to the Arduino IDE (v1.0.5) for this board.
 
-Installation
-============
+
+#Installation
+---
+
 
 Step 1:
 
@@ -88,23 +91,23 @@ It requires Nordic’s to work and provides a simple service and some APIs for e
 sudo apt-get remove ModemManager
 
 
-Driver
-======
+#Driver
+---
+
 
 The board contains an USB port, which allows you to load compiled sketches on to the board, the USB will act as a USB CDC (virtual COM) port and it requires driver to work.
 
-Download the signed driver here for Windows (includes up to Windows 8 PC):<br/>
-http://support.atmel.com/bin/customer.exe?=&action=viewKbEntry&id=1624
+Download the signed driver (RBL_Windows_Driver_Installer.zip) for Windows (includes up to Windows 8 PC)<br/>
 
 Installation
 
-Do not connect Blend Micro to any USB port before the device driver is installed. To install, right click the .inf file and select install, after that, connect your Blend Micro to one of USB ports.
+Do not connect the Blend board to any USB port before the device driver is installed. To install, unzip the file, run the .exe and follow the instructions. After that, connect your Blend board to one of USB ports.
 
 For Mac OSX and Linux, no driver is required.
 
 
-Resources
-=========
+#Resources
+---
 
 1. [Blend Micro Forum](https://redbearlab.zendesk.com/forums/23046987-Blend-Micro)
 
