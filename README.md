@@ -1,5 +1,5 @@
-##Blend
-=======
+Blend
+=====
 
 
 An Arduino compatible development board with BLE support (Atmega32u4 + nRF8001).
@@ -7,8 +7,8 @@ An Arduino compatible development board with BLE support (Atmega32u4 + nRF8001).
 This add-on package is to add support to the Arduino IDE (v1.0.5) for this board.
 
 
-##Installation
-==============
+Installation
+============
 
 
 Step 1:
@@ -91,8 +91,8 @@ It requires Nordic’s to work and provides a simple service and some APIs for e
 sudo apt-get remove ModemManager
 
 
-##Driver
-========
+Driver
+======
 
 
 The board contains an USB port, which allows you to load compiled sketches on to the board, the USB will act as a USB CDC (virtual COM) port and it requires driver to work.
@@ -106,8 +106,8 @@ Do not connect the Blend board to any USB port before the device driver is insta
 For Mac OSX and Linux, no driver is required.
 
 
-##Resources
-===========
+Resources
+=========
 
 1. [Blend Micro Forum](https://redbearlab.zendesk.com/forums/23046987-Blend-Micro)
 
@@ -122,8 +122,8 @@ For Mac OSX and Linux, no driver is required.
 6. [Bluetooth SIG](https://www.bluetooth.org/en-us)
 
 
-##License
-=========
+License
+=======
 
 Copyright (c) 2014 RedBearLab
 
