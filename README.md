@@ -1,15 +1,15 @@
 Blend
 =====
 
-
 An Arduino compatible development board with BLE support (Atmega32u4 + nRF8001).
 
-This add-on package is to add support to the Arduino IDE (v1.0.5) for this board.
+This add-on package is to add support to the Arduino IDE (tested on v1.0.5) for this board.
+
+Note that we do not support v1.5.x as it is still in beta.
 
 
 Installation
 ============
-
 
 Step 1:
 
