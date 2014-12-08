@@ -94,7 +94,6 @@ sudo apt-get remove ModemManager
 Driver
 ======
 
-
 The board contains an USB port, which allows you to load compiled sketches on to the board, the USB will act as a USB CDC (virtual COM) port and it requires driver to work.
 
 Download the signed driver (RBL_Windows_Driver_Installer.zip) for Windows (includes up to Windows 8 PC)<br/>
@@ -104,6 +103,21 @@ Installation
 Do not connect the Blend board to any USB port before the device driver is installed. To install, unzip the file, run the .exe and follow the instructions. After that, connect your Blend board to one of USB ports.
 
 For Mac OSX and Linux, no driver is required.
+
+
+Troubleshooting
+===============
+
+Two possible ways will cause the board unable to load sketches:
+1. If you forgot to modify the main.cpp file (to adjust some USB settings) and then load a sketch, the board's USB will not work since the clock is incorrect.
+2. Failed to load a complete sketche last time (e.g. uploading and suddenly removing power source), then the board's USB will not work since the firmware inside the board is invalid.
+
+A recovery procedure:
+1. Modify the main.cpp as mentioned in the Installation session shown above.
+2. Open a simple sketch (e.g. Blink)
+3. Reset the board, it will enter to bootloader mode for 8 seconds (the LED - L will be flashing).
+4. During this 8-second period, select the COM port of the board in the Arduino IDE (Menu -> Tools -> Serial Port)
+5. Press "Compile and Upload" and then reset the board again, it should be able to load the sketch and fix this issue.
 
 
 Resources
