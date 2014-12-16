@@ -108,23 +108,23 @@ For Mac OSX and Linux, no driver is required.
 Troubleshooting
 ===============
 
-Two possible ways will cause the board unable to load sketches:
+There are two possible causes of not able to upload sketches to your Blend Micro
 
-1. If you forgot to modify the main.cpp file (to adjust some USB settings) and then load a sketch, the board's USB will not work since the clock is incorrect.
+1. You may have forgotten to change/modify the main.cpp file.
 
-2. Failed to load a complete sketche last time (e.g. uploading and suddenly removing power source), then the board's USB will not work since the firmware inside the board is invalid.
+2. Fail to upload a complete sketch last time. (e.g. uploading and suddenly removing power source, then the board's USB will not work since the firmware inside the board is invalid)
 
-A recovery procedure:
+Recovery Procedure
 
-1. Modify the main.cpp as mentioned in the Installation session shown above.
+1. Modify the main.cpp as mentioned in the "Arduino IDE Setup" session shown above.
 
-2. Open a simple sketch (e.g. Blink)
+2. Open the Blink sketch
 
 3. Reset the board, it will enter to bootloader mode for 8 seconds (the LED - L will be flashing).
 
 4. During this 8-second period, select the COM port of the board in the Arduino IDE (Menu -> Tools -> Serial Port)
 
-5. Press "Compile and Upload" and then reset the board again, it should be able to load the sketch and fix this issue.
+5. Press "Compile and Upload" and then press the reset button on the board again, it should be able to load the sketch and fix the issue.
 
 
 Resources
