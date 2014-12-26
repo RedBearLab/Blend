@@ -84,11 +84,13 @@ https://github.com/RedBearLab/nRF8001
 
 It requires Nordic’s to work and provides a simple service and some APIs for easy to use with RBL examples and App. It is easy to use if you just want to exchange data between the board and iPhone or other BLE Central devices.
 
-
 *** It is similar to install on Linux.
-*** For Linux (e.g. Ubuntu 14.04) users: if you found you cannot upload sketches, you have to remove ModemManager
 
-sudo apt-get remove ModemManager
+*** For Linux (e.g. Ubuntu 14.04) users: ModemManager will try to use the Blend Micro as a modem and this causes the upload process fail using Arduino IDE. To allow Arduino IDE to upload correctly, you need to fix it by modify the UDEV rule, write a simple UDEV rule to ignore it from being handled by modem manager.
+
+In "/etc/udev/rules.d/77-mm-usb-device-blacklist.rules", simply add this single line:
+
+ATTR{idVendor}=="03eb",  ENV{ID_MM_DEVICE_IGNORE}="1"
 
 
 Driver
@@ -103,12 +105,6 @@ Installation
 Do not connect the Blend board to any USB port before the device driver is installed. To install, unzip the file, run the .exe and follow the instructions. After that, connect your Blend board to one of USB ports.
 
 For Mac OSX and Linux, no driver is required.
-
-For Linux (e.g. Ubuntu), ModemManager will try to use the Blend Micro as a modem and this causes the upload process fail using Arduino IDE. To allow Arduino IDE to upload correctly, you need to fix it by modify the UDEV rule, write a simple UDEV rule to ignore it from being handled by modem manager.
-
-In "/etc/udev/rules.d/77-mm-usb-device-blacklist.rules", simply add this single line:
-
-ATTR{idVendor}=="03eb",  ENV{ID_MM_DEVICE_IGNORE}="1"
 
 
 Troubleshooting
