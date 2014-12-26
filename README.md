@@ -104,9 +104,16 @@ Do not connect the Blend board to any USB port before the device driver is insta
 
 For Mac OSX and Linux, no driver is required.
 
+For Linux (e.g. Ubuntu), ModemManager will try to use the Blend Micro as a modem and this causes the upload process fail using Arduino IDE. To allow Arduino IDE to upload correctly, you need to fix it by modify the UDEV rule, write a simple UDEV rule to ignore it from being handled by modem manager.
+
+In "/etc/udev/rules.d/77-mm-usb-device-blacklist.rules", simply add this single line:
+
+ATTR{idVendor}=="03eb",  ENV{ID_MM_DEVICE_IGNORE}="1"
+
 
 Troubleshooting
 ===============
+
 
 There are two possible causes of not able to upload sketches to your Blend Micro
 
