@@ -145,6 +145,8 @@ Resources
 
 6. [Bluetooth SIG](https://www.bluetooth.org/en-us)
 
+7. Thanks [@makenai](https://github.com/makenai), made a [Fritzing file for the Blend Micro](https://github.com/makenai/FritzingParts).
+
 
 License
 =======
