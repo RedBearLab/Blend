@@ -1,9 +1,26 @@
 
 ##############################################################
 
-blend.name=Blendblend.upload.protocol=avr109blend.upload.maximum_size=28672
-blend.upload.speed=57600blend.upload.disable_flushing=trueblend.bootloader.low_fuses=0xffblend.bootloader.high_fuses=0xd8blend.bootloader.extended_fuses=0xcbblend.bootloader.path=caterinablend.bootloader.file=Caterina-Blend.hexblend.bootloader.unlock_bits=0x3Fblend.bootloader.lock_bits=0x2Fblend.build.mcu=atmega32u4
-blend.build.f_cpu=16000000Lblend.build.vid=0x2341blend.build.pid=0x8036blend.build.core=arduino:arduinoblend.build.variant=Blend
+blend.name=Blend
+blend.upload.protocol=avr109
+blend.upload.maximum_size=28672
+blend.upload.speed=57600
+blend.upload.disable_flushing=true
+blend.bootloader.low_fuses=0xff
+blend.bootloader.high_fuses=0xd8
+blend.bootloader.extended_fuses=0xcb
+blend.bootloader.path=caterina
+blend.bootloader.file=Caterina-Blend.hex
+blend.bootloader.unlock_bits=0x3F
+blend.bootloader.lock_bits=0x2F
+blend.build.mcu=atmega32u4
+blend.build.f_cpu=16000000L
+
+blend.build.vid=0x2341
+blend.build.pid=0x8036
+
+blend.build.core=arduino:arduino
+blend.build.variant=Blend
 
 ##############################################################
 
