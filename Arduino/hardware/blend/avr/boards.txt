@@ -2,6 +2,7 @@
 ##############################################################
 
 blend.name=Blend
+blend.build.board=BLEND
 blend.upload.protocol=avr109
 blend.upload.maximum_size=28672
 blend.upload.speed=57600
@@ -25,6 +26,7 @@ blend.build.variant=Blend
 ##############################################################
 
 blendmicro8.name=Blend Micro 3.3V/8MHz
+blendmicro8.build.board=BLEND_MICRO
 blendmicro8.upload.protocol=avr109
 blendmicro8.upload.maximum_size=28672
 
@@ -50,6 +52,7 @@ blendmicro8.build.variant=BlendMicro-8MHz
 ##############################################################
 
 blendmicro16.name=Blend Micro 3.3V/16MHz (overclock)
+blendmicro16.build.board=BLEND_MICRO
 blendmicro16.upload.protocol=avr109
 blendmicro16.upload.maximum_size=28672
 
