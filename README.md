@@ -3,9 +3,7 @@ Blend
 
 An Arduino compatible development board with BLE support (Atmega32u4 + nRF8001).
 
-This add-on package is to add support to the Arduino IDE (tested on v1.0.5) for this board.
-
-Note that we do not support v1.5.x as it is still in beta.
+This add-on package is to add support to the Arduino IDE (tested on v1.6.0) for this board.
 
 
 Installation
@@ -21,56 +19,8 @@ Documents > Arduino
 Windows:<br/>
 C: > Users > YourName > Documents > Arduino
 
+
 Step 2:
-
-Locate “main.cpp” in your Arduino IDE, and replace it with the one provided in this repository.
-
-Mac OSX:<br/>
-Right click your Arduino IDE, click “Show Package Contents”, the “main.cpp” in<br/>
-Contents > Resources > Java > hardware > arduino > cores > arduino > main.cpp
-
-Windows:<br/>
-Arduino IDE > hardware > arduino > cores > arduino > main.cpp
-
-Or modify it yourself with the following code before setup():
-
-```
-#if defined(BLEND_MICRO_8MHZ)
-	// As the F_CPU = 8000000UL, the USB core make the PLLCSR = 0x02
-	// But the external xtal is 16000000Hz, so correct it here.
-	PLLCSR |= 0x10;				// Need 16 MHz xtal
-	while (!(PLLCSR & (1<<PLOCK)));		// wait for lock pll
-#elif defined(BLEND_MICRO_16MHZ)
-	// The CPU clock in bootloader is 8MHz, change to 16MHz for sketches to run (i.e. overclock running at 3.3v).
-	CLKPR = 0x80;
-	CLKPR = 0;
-#endif
-```
-
-This code is to set the USB and CPU clock as it is running at 8 MHz with 3.3v but the external crystal is 16 MHz, so need to adjust the USB to run correctly.
-
-An option to play without using the add-on:
-
-Use it as Arduino Micro at 16 MHz (it is so called "overclock", since it is running at 3.3V), the bootloader still requires our driver to work, see Driver session (Windows platform only).
-
-Modify your sketch with the following code in setup():
-
-```
-void setup()
-{
-    // Set to 16 MHz as external crystal.
-    CLKPR = 0x80;
-    CLKPR = 0;
-
-    // Since default pins set to 9 and 8 for REQN and RDYN to nRF8001 for Arduino Micro
-    // But the Blend Micro is using 6 and 7, so change the pins here.
-    ble_set_pins(6, 7);
-
-    // other setup code here.
-}
-```
-
-Step 3:
 
 The Blend Micro board can be used as a standalone Arduino board without BLE. If you use BLE function, you need to use two libraries.
 
@@ -110,24 +60,20 @@ For Mac OSX and Linux, no driver is required.
 Troubleshooting
 ===============
 
+Recovery Procedure for Blend Micro sketch upload failing
 
-There are two possible causes of not able to upload sketches to your Blend Micro
+1. Open the Blink sketch
 
-1. You may have forgotten to change/modify the main.cpp file.
+2. Reset the board, it will enter to bootloader mode for 8 seconds (the LED - L will be flashing).
 
-2. Fail to upload a complete sketch last time. (e.g. uploading and suddenly removing power source, then the board's USB will not work since the firmware inside the board is invalid)
+3. During this 8-second period, select the COM port of the board in the Arduino IDE (Menu -> Tools -> Serial Port)
 
-Recovery Procedure
+4. Press "Compile and Upload" and then press the reset button on the board again, it should be able to load the sketch and fix the issue.
 
-1. Modify the main.cpp as mentioned in the "Arduino IDE Setup" session shown above.
 
-2. Open the Blink sketch
+Potential reasons for sketch upload failure
 
-3. Reset the board, it will enter to bootloader mode for 8 seconds (the LED - L will be flashing).
-
-4. During this 8-second period, select the COM port of the board in the Arduino IDE (Menu -> Tools -> Serial Port)
-
-5. Press "Compile and Upload" and then press the reset button on the board again, it should be able to load the sketch and fix the issue.
+1. Fail to upload a complete sketch last time. (e.g. uploading and suddenly removing power source, then the board's USB will not work since the firmware inside the board is invalid)
 
 
 Resources
