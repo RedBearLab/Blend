@@ -22,7 +22,6 @@
   $Id: wiring.h 249 2007-02-03 16:52:51Z mellis $
 */
 
-#include "../../../arduino/variants/micro/pins_arduino.h"
+#include "../../variants/leonardo/pins_arduino.h"
 
-#define BLEND_MICRO
-#define BLEND_MICRO_8MHZ
+#define BLEND
