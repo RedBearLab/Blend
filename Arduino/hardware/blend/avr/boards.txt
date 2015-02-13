@@ -7,6 +7,8 @@ blend.upload.protocol=avr109
 blend.upload.maximum_size=28672
 blend.upload.speed=57600
 blend.upload.disable_flushing=true
+blend.upload.tool=arduino:avrdude
+blend.bootloader.tool=arduino:avrdude
 blend.bootloader.low_fuses=0xff
 blend.bootloader.high_fuses=0xd8
 blend.bootloader.extended_fuses=0xcb
@@ -33,6 +35,8 @@ blendmicro8.upload.maximum_size=28672
 
 blendmicro8.upload.speed=57600
 blendmicro8.upload.disable_flushing=true
+blendmicro8.upload.tool=arduino:avrdude
+blendmicro8.bootloader.tool=arduino:avrdude
 blendmicro8.bootloader.low_fuses=0xff
 blendmicro8.bootloader.high_fuses=0xd8
 blendmicro8.bootloader.extended_fuses=0xcf
@@ -60,6 +64,8 @@ blendmicro16.upload.maximum_size=28672
 
 blendmicro16.upload.speed=57600
 blendmicro16.upload.disable_flushing=true
+blendmicro16.upload.tool=arduino:avrdude
+blendmicro16.bootloader.tool=arduino:avrdude
 blendmicro16.bootloader.low_fuses=0xff
 blendmicro16.bootloader.high_fuses=0xd8
 blendmicro16.bootloader.extended_fuses=0xcf
