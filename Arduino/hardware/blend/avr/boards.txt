@@ -27,6 +27,9 @@ blend.build.extra_flags={build.usb_flags}
 blend.build.core=arduino:arduino
 blend.build.variant=Blend
 
+blend.vid.0=0x03EB
+blend.pid.0=0x2404
+
 ##############################################################
 
 blendmicro8.name=Blend Micro 3.3V/8MHz
@@ -56,6 +59,9 @@ blendmicro8.build.extra_flags={build.usb_flags}
 blendmicro8.build.core=arduino:arduino
 blendmicro8.build.variant=BlendMicro-8MHz
 
+blendmicro8.vid.0=0x03EB
+blendmicro8.pid.0=0x2404
+
 ##############################################################
 
 blendmicro16.name=Blend Micro 3.3V/16MHz (overclock)
@@ -84,5 +90,8 @@ blendmicro16.build.usb_product="Blend Micro"
 blendmicro16.build.extra_flags={build.usb_flags}
 blendmicro16.build.core=arduino:arduino
 blendmicro16.build.variant=BlendMicro-16MHz
+
+blendmicro16.vid.0=0x03EB
+blendmicro16.pid.0=0x2404
 
 ##############################################################
