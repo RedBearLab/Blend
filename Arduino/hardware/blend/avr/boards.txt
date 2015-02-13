@@ -19,7 +19,8 @@ blend.build.f_cpu=16000000L
 
 blend.build.vid=0x2341
 blend.build.pid=0x8036
-
+blend.build.usb_product="Blend"
+blend.build.extra_flags={build.usb_flags}
 blend.build.core=arduino:arduino
 blend.build.variant=Blend
 
@@ -44,8 +45,9 @@ blendmicro8.build.mcu=atmega32u4
 blendmicro8.build.f_cpu=8000000L
 
 blendmicro8.build.vid=0x03EB
-
 blendmicro8.build.pid=0x2404
+blendmicro8.build.usb_product="Blend Micro"
+blendmicro8.build.extra_flags={build.usb_flags}
 blendmicro8.build.core=arduino:arduino
 blendmicro8.build.variant=BlendMicro-8MHz
 
@@ -70,8 +72,9 @@ blendmicro16.build.mcu=atmega32u4
 blendmicro16.build.f_cpu=16000000L
 
 blendmicro16.build.vid=0x03EB
-
 blendmicro16.build.pid=0x2404
+blendmicro16.build.usb_product="Blend Micro"
+blendmicro16.build.extra_flags={build.usb_flags}
 blendmicro16.build.core=arduino:arduino
 blendmicro16.build.variant=BlendMicro-16MHz
 
