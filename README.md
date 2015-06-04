@@ -5,36 +5,29 @@ An Arduino compatible development board with BLE support (Atmega32u4 + nRF8001).
 
 This add-on package is to add support to the Arduino IDE (tested on v1.6.0) for this board.
 
+* Tested and support Arduino IDE version 1.6.4.
+
 
 Installation
 ============
 
 Step 1:
 
-Copy the “Arduino\hardware" folder to your sketchbook folder. The sketchbook folder is your "Documents\Arduino” folder.
+Install using Arduino IDE (version 1.6.4) Boards Manager, follow this document:
 
-Mac OSX:<br/>
-Documents > Arduino
-
-Windows:<br/>
-C: > Users > YourName > Documents > Arduino
-
+https://github.com/RedBearLab/Blend/blob/master/Docs/BoardsManager.pdf
 
 Step 2:
 
 The Blend Micro board can be used as a standalone Arduino board without BLE. If you use BLE function, you need to use two libraries.
 
-1: Get Nordic nRF8001 SDK for Arduino<br/>
-https://github.com/NordicSemiconductor/ble-sdk-arduino
+1: Get and install [Nordic nRF8001 SDK for Arduino](https://github.com/cheong2k/ble-sdk-arduino)
 
 It provides a lot of BLE examples/tutorials includes how to create your own services and characteristics.
 
-2: Get RBL nRF8001 Library (added some simple APIs)<br/>
-https://github.com/RedBearLab/nRF8001
+2: Get and install [RBL nRF8001 Library](https://github.com/RedBearLab/nRF8001)
 
-It requires Nordic’s to work and provides a simple service and some APIs for easy to use with RBL examples and App. It is easy to use if you just want to exchange data between the board and iPhone or other BLE Central devices.
-
-*** It is similar to install on Linux.
+* This library requires Nordic’s to work and provides a simple service and some APIs for easy to use with RBL examples and App. It is easy to use if you just want to exchange data between the board and iPhone or other BLE Central devices.
 
 *** For Linux (e.g. Ubuntu 14.04) users: ModemManager will try to use the Blend Micro as a modem and this causes the upload process fail using Arduino IDE. To allow Arduino IDE to upload correctly, you need to fix it by modify the UDEV rule, write a simple UDEV rule to ignore it from being handled by modem manager.
 
@@ -81,7 +74,7 @@ Resources
 
 1. [Blend Micro Forum](https://redbearlab.zendesk.com/forums/23046987-Blend-Micro)
 
-2. [Nordic nRF8001 SDK for Arduino - Library](https://github.com/NordicSemiconductor/ble-sdk-arduino)
+2. [Nordic nRF8001 SDK for Arduino - Library](https://github.com/cheong2k/ble-sdk-arduino)
 
 3. [Nordic nRF8001 SDK for Arduino - Forum](https://redbearlab.zendesk.com/forums/21921933-Nordic-nRF8001-SDK-for-Arduino)
 
