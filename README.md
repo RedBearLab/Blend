@@ -35,6 +35,10 @@ In "/etc/udev/rules.d/77-mm-usb-device-blacklist.rules", simply add this single 
 
 ATTR{idVendor}=="03eb",  ENV{ID_MM_DEVICE_IGNORE}="1"
 
+3: Another very useful library you can use which allows to define services and characteristics in code without using Nordic's nRFgo Studio. 
+
+https://github.com/sandeepmistry/arduino-BLEPeripheral
+
 
 Driver
 ======
@@ -60,7 +64,8 @@ Blend Micro
 Credits
 =======
 
-1. [@makenai](https://github.com/makenai) made a [Fritzing file for the Blend Micro](https://github.com/makenai/FritzingParts).
+1. [@sandeepmistry](https://github.com/sandeepmistry) provides another useful library for the Blend boards.
+2. [@makenai](https://github.com/makenai) made a [Fritzing file for the Blend Micro](https://github.com/makenai/FritzingParts).
 
 
 Troubleshooting
