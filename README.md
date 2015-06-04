@@ -49,6 +49,19 @@ Do not connect the Blend board to any USB port before the device driver is insta
 
 For Mac OSX and Linux, no driver is required.
 
+Fritzing
+========
+
+Blend Micro
+
+[Fritzing file for the Blend Micro](https://github.com/makenai/FritzingParts)
+
+
+Credits
+=======
+
+1. [@makenai](https://github.com/makenai) made a [Fritzing file for the Blend Micro](https://github.com/makenai/FritzingParts).
+
 
 Troubleshooting
 ===============
