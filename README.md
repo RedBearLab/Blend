@@ -11,13 +11,17 @@ This add-on package is to add support to the Arduino IDE (tested on v1.6.0) for 
 Installation
 ============
 
-Step 1:
+Step 1 - Install the Blend boards to Arduino IDE:
 
 Install using Arduino IDE (version 1.6.4) Boards Manager, follow this document:
 
 https://github.com/RedBearLab/Blend/blob/master/Docs/BoardsManager.pdf
 
-Step 2:
+Step 2 - Install BLE libraries:
+
+Install using Arduino IDE (version 1.6.4) Library Manager, follow this document:
+
+https://github.com/RedBearLab/Blend/blob/master/Docs/LibraryManager.pdf
 
 The Blend Micro board can be used as a standalone Arduino board without BLE. If you use BLE function, you need to use two libraries.
 
