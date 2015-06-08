@@ -91,6 +91,11 @@ Potential reasons for sketch upload failure
 1. Fail to upload a complete sketch last time. (e.g. uploading and suddenly removing power source, then the board's USB will not work since the firmware inside the board is invalid)
 
 
+If you have any issue with install Arduino libraries, please read this:
+
+https://github.com/arduino/Arduino/wiki/Library-Manager-FAQ
+
+
 Resources
 =========
 
