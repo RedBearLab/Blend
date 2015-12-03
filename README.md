@@ -114,6 +114,12 @@ Resources
 7. Thanks [@makenai](https://github.com/makenai), made a [Fritzing file for the Blend Micro](https://github.com/makenai/FritzingParts).
 
 
+Other Turtorials
+================
+
+https://lilyhack.wordpress.com/2014/02/03/ble-read-write-arduino-raspberry-pi/
+
+
 License
 =======
 
