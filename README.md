@@ -1,11 +1,13 @@
 Blend
 =====
 
-An Arduino compatible development board with BLE support (Atmega32u4 + nRF8001).
+The Blend (Arduino form factor) and the Blend Micro are two Arduino compatible development boards with BLE support (Atmega32u4 + nRF8001).
 
-This add-on package is to add support to the Arduino IDE (tested on v1.6.0) for this board.
+This add-on boared support package is to add support to the Arduino IDE for these boards.
 
 * Tested and support Arduino IDE version 1.6.4.
+
+Unless you know how to do with this reporsitory, otherwise please use Boards Manager to install this support package.
 
 
 Installation
@@ -13,23 +15,23 @@ Installation
 
 Step 1 - Install the Blend boards to Arduino IDE:
 
-Install using Arduino IDE (version 1.6.4) Boards Manager, follow this document:
+Install using Arduino IDE (version 1.6.7) Boards Manager, follow this document:
 
 https://github.com/RedBearLab/Blend/blob/master/Docs/BoardsManager.pdf
 
 Step 2 - Install BLE libraries:
 
-Install using Arduino IDE (version 1.6.4) Library Manager, follow this document:
+Install using Arduino IDE Library Manager, follow this document:
 
 https://github.com/RedBearLab/Blend/blob/master/Docs/LibraryManager.pdf
 
-The Blend Micro board can be used as a standalone Arduino board without BLE. If you use BLE function, you need to use two libraries.
+The Blend boards can be used as a standalone Arduino board without BLE. If you use BLE function, you need to use two libraries.
 
-1: Get and install [Nordic nRF8001 SDK for Arduino](https://github.com/cheong2k/ble-sdk-arduino)
+1: Install Nordic nRF8001 SDK from the Arduino Library Manager
 
 It provides a lot of BLE examples/tutorials includes how to create your own services and characteristics.
 
-2: Get and install [RBL nRF8001 Library](https://github.com/RedBearLab/nRF8001)
+2: Install RBL nRF8001 Library from the Arduino Library Manager
 
 * This library requires Nordic’s to work and provides a simple service and some APIs for easy to use with RBL examples and App. It is easy to use if you just want to exchange data between the board and iPhone or other BLE Central devices.
 
@@ -41,7 +43,7 @@ ATTR{idVendor}=="03eb",  ENV{ID_MM_DEVICE_IGNORE}="1"
 
 3: Another very useful library you can use which allows to define services and characteristics in code without using Nordic's nRFgo Studio. 
 
-https://github.com/sandeepmistry/arduino-BLEPeripheral
+[arduino-BLEPeripheral](https://github.com/sandeepmistry/arduino-BLEPeripheral)
 
 
 Driver
@@ -123,7 +125,7 @@ https://lilyhack.wordpress.com/2014/02/03/ble-read-write-arduino-raspberry-pi/
 License
 =======
 
-Copyright (c) 2014 RedBearLab
+Copyright (c) 2014-2016 RedBearLab
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
