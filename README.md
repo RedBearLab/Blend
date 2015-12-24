@@ -5,7 +5,7 @@ The Blend (Arduino form factor) and the Blend Micro are two Arduino compatible d
 
 This add-on boared support package is to add support to the Arduino IDE for these boards.
 
-* Tested and support Arduino IDE version 1.6.4.
+* Tested and support Arduino IDE version 1.6.7.
 
 Unless you know how to do with this reporsitory, otherwise please use Boards Manager to install this support package.
 
