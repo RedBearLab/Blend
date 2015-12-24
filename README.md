@@ -1,7 +1,7 @@
 Blend
 =====
 
-The Blend (Arduino form factor) and the Blend Micro are two Arduino compatible development boards with BLE support (Atmega32u4 + nRF8001).
+The Blend (Arduino form factor) and the Blend Micro are two Arduino compatible development boards with BLE support (Atmega32u4 + nRF8001). The Blend is actually a 'BLE + Leonardo' board ([Leonardo](https://www.arduino.cc/en/Main/ArduinoBoardLeonardo) is an Arduino board).
 
 This add-on boared support package is to add support to the Arduino IDE for these boards.
 
